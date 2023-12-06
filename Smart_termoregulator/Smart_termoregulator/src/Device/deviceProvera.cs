@@ -9,7 +9,6 @@ namespace Smart_termoregulator.src.Device
     public class deviceProvera : IproveraTemperature  
     {
         public void ProveriTemperaturu() {
-            int a;
         }
 
     }
