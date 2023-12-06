@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("aaaaa");
+            Console.WriteLine("Dobra si!");
         }
     }
 }
