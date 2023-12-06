@@ -8,15 +8,15 @@ namespace Smart_termoregulator.src.Device
 {
     public class Device
     {
-        int id;
-        float temperatura;
+        private uint id;
+        private float temperatura;
 
-        Device(float temperatura) {
-            this.id = new Random().Next(1, 10000);
-            this.Temperatura = temperatura;
+        public Device(uint id,float temperatura) {
+            this.id = id;
+            this.temperatura = temperatura;
         }
 
-        public int ID { get => id; set => id = value; }
+        public uint Id { get => id; set => id = value; }
         public float Temperatura { get => temperatura; set => temperatura = value; }
     }
 }
