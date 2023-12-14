@@ -11,7 +11,8 @@ namespace Smart_termoregulator.src.Device
         private uint id;
         private float temperatura;
 
-        public Device(uint id,float temperatura) {
+        public Device(uint id, float temperatura)
+        {
             this.id = id;
             this.temperatura = temperatura;
         }
