@@ -8,5 +8,6 @@ namespace Smart_termoregulator.src.Heater
 {
     public interface Iresursi
     {
+        void OptimalnotrosenjeResursa();
     }
 }

@@ -8,5 +8,6 @@ namespace Smart_termoregulator.src.Heater
 {
     public class heaterVreme
     {
+        private DateTime pocetak, kraj, protekloVreme;
     }
 }

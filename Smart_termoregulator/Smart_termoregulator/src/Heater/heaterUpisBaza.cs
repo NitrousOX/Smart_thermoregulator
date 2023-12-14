@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.Heater
 {
-    public class heaterUpisBaza
-    {
+    public class heaterUpisBaza : IupisUBazu
+    { 
+
+        public void UpisiUBazu()
+        {
+
+        }
     }
 }

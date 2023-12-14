@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.Heater
 {
-    public class heaterResursi
+    public class heaterResursi : Iresursi
     {
+        public void OptimalnotrosenjeResursa() {
+
+        }
     }
 }
