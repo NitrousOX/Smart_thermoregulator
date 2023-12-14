@@ -13,5 +13,9 @@ namespace Smart_termoregulator.src.Regulator
         private rezim_rada rezim;
         private List<Device.Device>? uredjaji;
 
+        public Regulator()
+        {
+
+        }
     }
 }
