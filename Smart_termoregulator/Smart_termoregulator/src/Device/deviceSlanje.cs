@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.Device
 {
-    public class deviceSlanje : IslanjeTemperature
+    public class deviceSlanje : ISlanjeTemperature  
     {
-        public void PosaljiTemperaturu()
-        {
-            
+        private Device d = new Device(0);
+        public float PosaljiTemperaturu() {
+            return d.Temperatura;
         }
+
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.Device
 {
-    public interface IslanjeTemperature
+    public interface ISlanjeTemperature
     {
-        void PosaljiTemperaturu();
+        float PosaljiTemperaturu();
     }
 }
