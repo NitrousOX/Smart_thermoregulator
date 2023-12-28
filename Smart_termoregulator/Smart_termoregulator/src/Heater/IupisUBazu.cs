@@ -8,6 +8,6 @@ namespace Smart_termoregulator.src.Heater
 {
     public interface IupisUBazu
     {
-        void UpisiUBazu();
+        void UpisiUBazu(HeaterVreme informacijeZaVreme);
     }
 }

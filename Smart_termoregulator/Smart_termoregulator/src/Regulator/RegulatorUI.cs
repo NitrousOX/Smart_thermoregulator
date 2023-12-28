@@ -9,7 +9,7 @@ namespace Smart_termoregulator.src.Regulator
     public class RegulatorUI : IUserInterface
     {
 
-        public void UserInterface()
+        public void ShowUserInterface()
         {
           
         }

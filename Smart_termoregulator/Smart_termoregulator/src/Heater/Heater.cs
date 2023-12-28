@@ -10,5 +10,7 @@ namespace Smart_termoregulator.src.Heater
     public class Heater
     {
         private stanje_peci stanje;
+
+        public stanje_peci Stanje { get => stanje; set => stanje = value; }
     }
 }

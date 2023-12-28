@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.Heater
 {
-    public class heaterVreme
+    public class HeaterVreme
     {
-        private DateTime pocetak, kraj, protekloVreme;
+        DateTime start, time;
+        TimeSpan protekloVreme;
+
+        public DateTime Start { get => start; set => start = value; }
+        public DateTime Time { get => time; set => time = value; }
+        public TimeSpan ProtekloVreme { get => protekloVreme; set => protekloVreme = value; }
     }
 }

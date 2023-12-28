@@ -8,8 +8,13 @@ namespace Smart_termoregulator.src.Heater
 {
     public class heaterUpisBaza : IupisUBazu
     { 
+        public void UpisiUBazu(HeaterVreme informacijeZaVreme)
+        {
+            informacijeZaVreme.ProtekloVreme = informacijeZaVreme.Start - informacijeZaVreme.Time;
 
-        public void UpisiUBazu()
+        }
+
+        public void UpisiUBazuPaljenje(DateTime trenutno)
         {
 
         }
