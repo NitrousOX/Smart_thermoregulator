@@ -30,7 +30,7 @@ namespace Smart_termoregulator.src.Device
         public float Temperatura { get => temperatura; set => temperatura = value; }
     }
 
-    public class Temperature_difference
+    public static class Temperature_difference
     {
         public const float temperature_difference = 0.01F;
     }
