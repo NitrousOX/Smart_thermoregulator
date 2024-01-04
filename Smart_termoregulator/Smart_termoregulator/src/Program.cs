@@ -8,6 +8,10 @@ namespace Smart_termoregulator.src
         static void Main(string[] args)
         {
            Heater.implementation.Heater heater = new Heater.implementation.Heater();
+
+            heater.HeaterUpaliGrejanje();
+            Thread.Sleep(5000);
+            heater.HeaterUgasiGrejanje();
         }
     }
 }

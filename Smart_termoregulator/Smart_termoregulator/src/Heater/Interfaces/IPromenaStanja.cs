@@ -8,7 +8,7 @@ namespace Smart_termoregulator.src.Heater.Interfaces
 {
     internal interface IPromenaStanja
     {
-        void Upali(Heater h);
-        void Ugasi(Heater h);
+        void Upali(src.Heater.implementation.Heater h);
+        void Ugasi(src.Heater.implementation.Heater h);
     }
 }
