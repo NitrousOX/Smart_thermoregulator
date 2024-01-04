@@ -11,8 +11,8 @@ namespace Smart_termoregulator.src.Heater.implementation
     internal class heaterUpisBaza : IupisUBazu
     {
         private readonly string fileName = "HeaterBaza.txt";
+        private const double kWh_per_s = 0.000317;
         private UpisiUtxtFile upis;
-        public const double kWh_per_s = 0.000317;
 
         public void UpisiUBazu(HeaterVreme informacijeZaVreme)
         {

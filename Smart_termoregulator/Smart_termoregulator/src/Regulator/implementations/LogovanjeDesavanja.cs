@@ -8,9 +8,6 @@ namespace Smart_termoregulator.src.Regulator.implementations
 {
     public class LogovanjeDesavanja
     {
-        public void UpisiUTextFile()
-        {
-
-        }
+        private readonly string fileName = "Thermoregulator_logs.txt";
     }
 }
