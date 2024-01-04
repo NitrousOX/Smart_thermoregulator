@@ -14,5 +14,6 @@ namespace Smart_termoregulator.src.Heater
         public DateTime Start { get => start; set => start = value; }
         public DateTime Time { get => time; set => time = value; }
         public TimeSpan ProtekloVreme { get => protekloVreme; set => protekloVreme = value; }
+
     }
 }

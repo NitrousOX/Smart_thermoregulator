@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.Heater
 {
-    public interface Iresursi
+    internal interface IPromenaStanja
     {
-        void OptimalnotrosenjeResursa();
+        void Upali(Heater h);
+        void Ugasi(Heater h);
     }
 }
