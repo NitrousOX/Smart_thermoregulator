@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Smart_termoregulator.src.Heater
+namespace Smart_termoregulator.src.Heater.implementation
 {
-    public enum stanje_peci {UKLJUCEN, ISKLJUCEN}
-   
+    public enum stanje_peci { UKLJUCEN, ISKLJUCEN }
+
     public class Heater
     {
 
@@ -24,13 +24,13 @@ namespace Smart_termoregulator.src.Heater
 
         public void HeaterUpaliGrejanje()
         {
-            if(stanje == stanje_peci.ISKLJUCEN)
+            if (stanje == stanje_peci.ISKLJUCEN)
                 promenaStanja.Upali(this);
         }
 
         public void HeaterUgasiGrejanje()
         {
-            if(stanje == stanje_peci.UKLJUCEN)
+            if (stanje == stanje_peci.UKLJUCEN)
                 promenaStanja.Ugasi(this);
         }
     }

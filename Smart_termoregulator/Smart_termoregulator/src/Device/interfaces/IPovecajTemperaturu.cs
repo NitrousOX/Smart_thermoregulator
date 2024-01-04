@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Smart_termoregulator.src.Regulator
+namespace Smart_termoregulator.src.Device.interfaces
 {
-    public interface IUserInterface
+    public interface IPovecajTemperaturu
     {
-        void ShowUserInterface(); 
+        void PovecajTemperaturu();
     }
 }

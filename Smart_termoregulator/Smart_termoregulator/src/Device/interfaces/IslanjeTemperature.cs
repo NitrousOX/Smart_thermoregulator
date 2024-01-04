@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Smart_termoregulator.src.Device
+namespace Smart_termoregulator.src.Device.interfaces
 {
-    public interface ISmanjiTemperaturu
+    public interface ISlanjeTemperature
     {
-        void SmanjiTemperaturu();
+        float PosaljiTemperaturu();
     }
 }

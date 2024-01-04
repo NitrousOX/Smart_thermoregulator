@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Smart_termoregulator.src.Heater
+namespace Smart_termoregulator.src.Heater.implementation
 {
     internal class heaterUpisBaza : IupisUBazu
     {
@@ -15,12 +15,12 @@ namespace Smart_termoregulator.src.Heater
 
         public void UpisiUBazu(HeaterVreme informacijeZaVreme)
         {
-           List<string> text =new List<string>();
+            List<string> text = new List<string>();
             double energija = kWh_per_s * informacijeZaVreme.ProtekloVreme.TotalSeconds;
 
             upis = new UpisiUtxtFile();
             text.Add("[HEATER] Ugasen " + informacijeZaVreme.Time.ToString());
-            text.Add("[HEATER] proteklo vreme rada je: " + informacijeZaVreme.ProtekloVreme.ToString() + " potroseno " + energija +" kWh");
+            text.Add("[HEATER] proteklo vreme rada je: " + informacijeZaVreme.ProtekloVreme.ToString() + " potroseno " + energija + " kWh");
             upis.UpisiUFile(text, fileName);
         }
 

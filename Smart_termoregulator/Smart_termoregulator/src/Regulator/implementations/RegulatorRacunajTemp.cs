@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Smart_termoregulator.src.Regulator
+namespace Smart_termoregulator.src.Regulator.implementations
 {
     public class RegulatorRacunajTemp : IRacunajTemperaturu
     {
         public void RacunajSrednjuTemperaturu()
         {
-            
+
         }
     }
 }

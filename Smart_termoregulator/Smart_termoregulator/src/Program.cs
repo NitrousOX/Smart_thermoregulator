@@ -7,13 +7,7 @@ namespace Smart_termoregulator.src
     {
         static void Main(string[] args)
         {
-           src.Heater.Heater heater = new src.Heater.Heater();
-            heater.HeaterUgasiGrejanje();
-
-            heater.HeaterUpaliGrejanje();
-            Thread.Sleep(1000);
-            heater.HeaterUpaliGrejanje();
-            heater.HeaterUgasiGrejanje();
+           Heater.implementation.Heater heater = new Heater.implementation.Heater();
         }
     }
 }

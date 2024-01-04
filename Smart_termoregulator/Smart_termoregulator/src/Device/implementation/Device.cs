@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Smart_termoregulator.src.Device
+namespace Smart_termoregulator.src.Device.implementation
 {
     public class Device
     {
@@ -16,14 +16,14 @@ namespace Smart_termoregulator.src.Device
         public Device(uint id)
         {
             this.id = id;
-            this.temperatura =  rnd.Next(500, 1500) / 100;
-            this.heaterState = false;
+            temperatura = rnd.Next(500, 1500) / 100;
+            heaterState = false;
         }
 
         public Device()
         {
-            this.temperatura = rnd.Next(500, 1500) / 100;
-            this.heaterState = false;
+            temperatura = rnd.Next(500, 1500) / 100;
+            heaterState = false;
         }
 
         public uint Id { get => id; set => id = value; }
