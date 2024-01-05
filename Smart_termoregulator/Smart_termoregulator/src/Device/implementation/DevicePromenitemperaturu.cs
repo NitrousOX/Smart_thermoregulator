@@ -7,12 +7,18 @@ using Smart_termoregulator.src.Device.interfaces;
 
 namespace Smart_termoregulator.src.Device.implementation
 {
-    public class DevicePovecajTemeraturu : IPovecajTemperaturu
+    public class DevicePromeniTemeraturu : IPromenaTemperature
     {
-        private Device d = new Device();
+        private Device device = new Device();
+
         public void PovecajTemperaturu()
         {
-            d.Temperatura += Temperature_difference.temperature_difference;
+            device.Temperatura += device.TemperatureDifference;
+        }
+
+        public void SmanjiTemperaturu()
+        {
+            device.Temperatura -= device.TemperatureDifference;
         }
     }
 }

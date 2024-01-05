@@ -8,12 +8,14 @@ namespace Smart_termoregulator.src.Device.implementation
 {
     public class Device
     {
-        private uint id;
+        private int id;
         private Random rnd = new Random();
         private float temperatura;
         private bool heaterState;
+        private const float temperatureDifference = 0.01F;
+        private DevicePromeniTemeraturu promeniTemperaturu;
 
-        public Device(uint id)
+        public Device(int id)
         {
             this.id = id;
             temperatura = rnd.Next(500, 1500) / 100;
@@ -26,12 +28,23 @@ namespace Smart_termoregulator.src.Device.implementation
             heaterState = false;
         }
 
-        public uint Id { get => id; set => id = value; }
+        public int Id { get => id; set => id = value; }
         public float Temperatura { get => temperatura; set => temperatura = value; }
-    }
 
-    public static class Temperature_difference
-    {
-        public const float temperature_difference = 0.01F;
+        public float TemperatureDifference => temperatureDifference;
+
+        public bool HeaterState { set => heaterState = value; }
+
+        public void DevicePovecajTemperaturu()
+        {
+            if (heaterState)
+                promeniTemperaturu.PovecajTemperaturu();
+        }
+
+        public void DeviceSmanjiTemperaturu() 
+        {
+            if (!heaterState)
+                promeniTemperaturu.SmanjiTemperaturu();
+        }
     }
 }

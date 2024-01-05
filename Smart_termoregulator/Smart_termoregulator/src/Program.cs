@@ -1,4 +1,5 @@
 ﻿using Smart_termoregulator.src.FileUpis;
+using Smart_termoregulator.src.Device.implementation;
 
 
 namespace Smart_termoregulator.src
@@ -7,7 +8,38 @@ namespace Smart_termoregulator.src
     {
         static void Main(string[] args)
         {
-           Heater.implementation.Heater heater = new Heater.implementation.Heater();
+            Regulator.implementations.RegulatorUI uI = new Regulator.implementations.RegulatorUI();
+            uI.ShowUserInterface();
+            Random rnd = new Random();
+            int deviceNum = 4;
+            int[] ids = new int[deviceNum];
+            Regulator.implementations.Regulator regulator = new Regulator.implementations.Regulator();
+
+            for (int i = 0; i < deviceNum; i++)
+            {
+                bool isti = false;
+                do
+                {
+                    ids[i] = rnd.Next(0, 100);
+                    foreach (int id in ids)
+                    {
+                        if (id != ids[i])
+                            isti = false;
+                    }
+                } while (isti);
+
+                Device.implementation.Device device = new Device.implementation.Device(ids[i]);
+                regulator.Uredjaji.Add(device);
+
+                foreach (int id in ids)
+                {
+                    if (id == ids[i])
+                        isti = true;
+                }
+            }
+
+
+            Heater.implementation.Heater heater = new Heater.implementation.Heater();
 
             heater.HeaterUpaliGrejanje();
             Thread.Sleep(5000);
