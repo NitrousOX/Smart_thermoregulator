@@ -10,18 +10,16 @@ namespace Smart_termoregulator.src.Regulator.implementations
 {
     public class RegulatorRacunajTemp : IRacunajTemperaturu
     {
-        private Regulator regulator = new Regulator();
-
-        public void RacunajSrednjuTemperaturu()
+        public void RacunajSrednjuTemperaturu(Regulator reg)
         {
             float suma = 0;
             int deviceNum = 0;
-            foreach(Device.implementation.Device d in regulator.Uredjaji)
+            foreach(Device.implementation.Device d in reg.Uredjaji)
             {
                 suma += d.Temperatura;
                 deviceNum++;
             }
-            regulator.SrednjaTemperatura = suma / deviceNum;
+            reg.SrednjaTemperatura = suma / deviceNum;
         }
     }
 }

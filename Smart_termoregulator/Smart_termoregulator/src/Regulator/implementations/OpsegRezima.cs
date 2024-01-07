@@ -8,39 +8,43 @@ namespace Smart_termoregulator.src.Regulator.implementations
 {
     internal class OpsegRezima
     {
-        private string pocetak;//format: hh:mm:ss
-        private string kraj;
-        private TimeSpan tPocetak;
-        private TimeSpan tKraj;
+        private TimeSpan pocetak;
+        private TimeSpan kraj;
 
-        public string Pocetak { get => pocetak; set => pocetak = value; }
-        public string Kraj { get => kraj; set => kraj = value; }
+        public TimeSpan Pocetak { get => pocetak; }
+        public TimeSpan Kraj { get => kraj; }
 
-        public OpsegRezima(string pocetak,string kraj) {
-            string[] svremenaPocetak = pocetak.Split('.');
-            int[] ivremenaPocetak = new int[3];
-            for(int i = 0; i < 3; i++)
+        public OpsegRezima(string sPocetak,string sKraj) {
+            pocetak = pretvoriUTimeSpan(sPocetak);
+            kraj = pretvoriUTimeSpan(sKraj);
+        }
+
+        private TimeSpan pretvoriUTimeSpan(string vremeString)
+        {
+            TimeSpan vremenskiPeriod;
+            int[] vremena = stringUIntVremena(vremeString);
+            vremenskiPeriod = new TimeSpan(vremena[0], vremena[1], vremena[2]);
+
+            return vremenskiPeriod;
+        }
+
+        private int[] stringUIntVremena(string vremeString)
+        {
+            int[] vremena = new int[3];
+            int i = 0;
+            foreach (string broj in vremeString.Split(':'))
             {
-                ivremenaPocetak[i] = int.Parse(svremenaPocetak[i]);
+                vremena[i++] = Convert.ToInt32(broj);
             }
-
-            string[] svremenaKraj= kraj.Split('.');
-            int[] ivremenaKraj = new int[3];
-            for (int i = 0; i < 3; i++)
-            {
-                ivremenaKraj[i] = int.Parse(svremenaKraj[i]);
-            }
-
-            DateTime today = DateTime.Today;
-
-
-
-            this.pocetak = pocetak;
-            this.kraj = kraj;
+            return vremena;
         }
 
         public bool proveraUnutarOpsega()
         {
+            TimeSpan sad = DateTime.Now.TimeOfDay;
+
+            if ((TimeSpan.Compare(pocetak, sad) <= 0) && (TimeSpan.Compare(sad, kraj) <= 0))
+                return true;
 
             return false;
         }

@@ -8,6 +8,6 @@ namespace Smart_termoregulator.src.Regulator.@interface
 {
     public interface IRacunajTemperaturu
     {
-        void RacunajSrednjuTemperaturu();
+        void RacunajSrednjuTemperaturu(src.Regulator.implementations.Regulator r);
     }
 }

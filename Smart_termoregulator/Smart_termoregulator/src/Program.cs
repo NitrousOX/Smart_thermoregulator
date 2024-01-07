@@ -10,6 +10,8 @@ namespace Smart_termoregulator.src
         {
             Regulator.implementations.RegulatorUI uI = new Regulator.implementations.RegulatorUI();
             uI.ShowUserInterface();
+
+            /*
             Random rnd = new Random();
             int deviceNum = 4;
             int[] ids = new int[deviceNum];
@@ -37,7 +39,7 @@ namespace Smart_termoregulator.src
                         isti = true;
                 }
             }
-
+            */
 
             Heater.implementation.Heater heater = new Heater.implementation.Heater();
 
