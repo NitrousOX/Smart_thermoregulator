@@ -9,7 +9,7 @@ namespace Smart_termoregulator.src
         static void Main(string[] args)
         {
             Regulator.implementations.RegulatorUI uI = new Regulator.implementations.RegulatorUI();
-            uI.ShowUserInterface();
+           src.Regulator.implementations.Regulator regulator = uI.ShowUserInterface();
 
             /*
             Random rnd = new Random();

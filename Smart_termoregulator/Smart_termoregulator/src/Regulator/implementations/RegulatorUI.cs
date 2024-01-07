@@ -10,9 +10,9 @@ namespace Smart_termoregulator.src.Regulator.implementations
 {
     public class RegulatorUI : IUserInterface
     {
-        private Regulator? regulator;
-        public void ShowUserInterface()
+        public Regulator ShowUserInterface()
         {
+
             string pattern = "^(([01][0-9])|(2[0-3])):[0-5][0-9]:[0-5][0-9]$";
             Regex rg = new Regex(pattern);
             string s, pocetak, kraj;
@@ -68,8 +68,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
             } while (!rg.IsMatch(s));
 
             double nocnaTemp = double.Parse(s);
-
-            regulator = new Regulator(pocetak, kraj, dnevnaTemp, nocnaTemp);
+            return new Regulator(pocetak, kraj, dnevnaTemp, nocnaTemp);
         }
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.Regulator.@interface
 {
-    public interface IUserInterface
+    internal interface ILogovanje
     {
-        src.Regulator.implementations.Regulator ShowUserInterface();
+        void Loguj(string text);
     }
 }
