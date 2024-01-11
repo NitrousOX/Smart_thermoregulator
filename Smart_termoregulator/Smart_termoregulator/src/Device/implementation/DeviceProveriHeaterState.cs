@@ -1,4 +1,5 @@
 ﻿using Smart_termoregulator.src.Device.interfaces;
+using Smart_termoregulator.src.Regulator.implementations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,7 @@ namespace Smart_termoregulator.src.Device.implementation
                     device.DevicePovecajTemperaturu();
                 else
                     device.DeviceSmanjiTemperaturu();
+
             }
         }
 
