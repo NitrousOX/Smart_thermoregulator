@@ -13,11 +13,10 @@ namespace Smart_termoregulator.src.Regulator.implementations
         private rezim_rada rezim;
         private double tempNocni, tempDnevni;
         private OpsegRezima opsegDnevni;
-        private RegulatorRacunajTemp? racunajTemp;
+        private RegulatorRacunajTemp racunajTemp;
         private float srednjaTemperatura;
         private int deviceNum;
         private RegulatorDodajDevice dodajDevice;
-        private RegulatorRacunajTemp racunajTemp;
 
         private List<Device.implementation.Device> uredjaji = new List<Device.implementation.Device>();
 

@@ -8,7 +8,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
 {
     internal class LogType : LogovanjeDesavanja
     {
-        public void logDevice(int i)
+        public static void logDevice(int i)
         {
             string text;
             switch (i)
@@ -26,14 +26,48 @@ namespace Smart_termoregulator.src.Regulator.implementations
             Loguj(text);
         }
 
-        public void logRegulator()
+        public static void logRegulator(int i)
         {
+            string text;
+            switch (i)
+            {
+                case 0:
+                    text = "Uneti novi rezimi rada";
+                    break;
+                case 1:
+                    text = "Regulator pali heater";
+                    break;
+                case 2:
+                    text = "Regulator gasi heater";
+                    break;
+                default:
+                    text = "ERROR";
+                    break;
+            }
 
+            Loguj(text);
         }
 
-        public void logHeater()
+        public static void logHeater(int i)
         {
+            string text;
+            switch (i)
+            {
+                case 0:
+                    text = "";
+                    break;
+                case 1:
+                    text = "";
+                    break;
+                case 2:
+                    text = "";
+                    break;
+                default:
+                    text = "ERROR";
+                    break;
+            }
 
+            Loguj(text);
         }
     }
 }

@@ -32,6 +32,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
 
                 Device.implementation.Device device = new Device.implementation.Device(ids[i]);
                 regulator.Uredjaji.Add(device);
+                LogType.logDevice(0);
             }
         }
     }

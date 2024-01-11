@@ -7,13 +7,15 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.Regulator.implementations
 {
-    public class LogovanjeDesavanja : ILogovanje
+    public class LogovanjeDesavanja
     {
-        private readonly string fileName = "Thermoregulator_logs.txt";
+        private static readonly string fileName = "Thermoregulator_logs.txt";
         
-        public void Loguj(string text)
+        public static void Loguj(string text)
         {
-            src.FileUpis.UpisiUtxtFile.UpisiUFile(text, fileName);
+            string datumText = "[LOG]\t" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "\t";
+            datumText += text + "\n";
+            src.FileUpis.UpisiUtxtFile.UpisiUFile(datumText, fileName);
         }
     }
 }
