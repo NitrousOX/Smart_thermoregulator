@@ -84,7 +84,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
             } while (!rg.IsMatch(s));
 
             double nocnaTemp = double.Parse(s);
-
+            LogType.logRegulator(0);
             return new Regulator(pocetak, kraj, dnevnaTemp, nocnaTemp, deviceNum);
         }
     }

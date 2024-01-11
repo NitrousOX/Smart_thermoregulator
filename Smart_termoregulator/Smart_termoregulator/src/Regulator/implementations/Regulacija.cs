@@ -9,7 +9,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
 {
     internal class Regulacija : IRegulacija
     {
-        //TODO: logovanje
+        
         public void Regulisi(Regulator regulator, src.Heater.implementation.Heater heater)
         {
             regulator.IzracunajSrednjuTemperaturu();
@@ -17,17 +17,29 @@ namespace Smart_termoregulator.src.Regulator.implementations
 
             if(regulator.Rezim == rezim_rada.DNEVNI)
             {
-                if(regulator.SrednjaTemperatura <= regulator.TempDnevni)
+                if (regulator.SrednjaTemperatura <= regulator.TempDnevni)
+                {
                     heater.HeaterUpaliGrejanje();
+                    LogType.logRegulator(1);
+                }
                 else
+                {
                     heater.HeaterUgasiGrejanje();
+                    LogType.logRegulator(2);
+                }
             }
             else
             {
                 if (regulator.SrednjaTemperatura <= regulator.TempNocni)
+                {
                     heater.HeaterUpaliGrejanje();
+                    LogType.logRegulator(1);
+                }
                 else
+                {
                     heater.HeaterUgasiGrejanje();
+                    LogType.logRegulator(2);
+                }
             }
         }
     }
