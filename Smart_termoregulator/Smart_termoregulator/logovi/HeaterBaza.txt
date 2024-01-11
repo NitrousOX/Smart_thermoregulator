@@ -52,3 +52,7 @@
 [HEATER] proteklo vreme rada je: 00:00:05.0214303 potroseno 0.0015917934051 kWh
 [HEATER] Upaljen 1/11/2024 1:19:57 PM[HEATER] Ugasen 1/11/2024 1:20:02 PM
 [HEATER] proteklo vreme rada je: 00:00:05.0209520 potroseno 0.001591641784 kWh
+[HEATER] Upaljen 11/01/2024 18:01:28[HEATER] Ugasen 11/01/2024 18:01:33
+[HEATER] proteklo vreme rada je: 00:00:05.0083770 potroseno 0.0015876555090000002 kWh
+[HEATER] Upaljen 11/01/2024 18:03:10[HEATER] Ugasen 11/01/2024 18:03:15
+[HEATER] proteklo vreme rada je: 00:00:05.0077619 potroseno 0.0015874605223 kWh
