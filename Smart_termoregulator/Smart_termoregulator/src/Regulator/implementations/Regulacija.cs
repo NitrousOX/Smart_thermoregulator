@@ -12,33 +12,53 @@ namespace Smart_termoregulator.src.Regulator.implementations
         
         public void Regulisi(Regulator regulator, src.Heater.implementation.Heater heater)
         {
-            regulator.IzracunajSrednjuTemperaturu();
-            double srednjaTemp = regulator.SrednjaTemperatura;
+            while (true)
+            {
+                Thread.Sleep(100);
+                regulator.IzracunajSrednjuTemperaturu();
+                double srednjaTemp = regulator.SrednjaTemperatura;
 
-            if(regulator.Rezim == rezim_rada.DNEVNI)
-            {
-                if (regulator.SrednjaTemperatura <= regulator.TempDnevni)
+                if (regulator.Rezim == rezim_rada.DNEVNI)
                 {
-                    heater.HeaterUpaliGrejanje();
-                    LogType.logRegulator(1);
+                    if (regulator.SrednjaTemperatura <= regulator.TempDnevni)
+                    {
+                        heater.HeaterUpaliGrejanje();
+                        foreach (src.Device.implementation.Device device in regulator.Uredjaji)
+                        {
+                            device.HeaterState = true;
+                        }
+                        LogType.logRegulator(1);
+                    }
+                    else
+                    {
+                        heater.HeaterUgasiGrejanje();
+                        foreach (src.Device.implementation.Device device in regulator.Uredjaji)
+                        {
+                            device.HeaterState = false;
+                        }
+                        LogType.logRegulator(2);
+                    }
                 }
                 else
                 {
-                    heater.HeaterUgasiGrejanje();
-                    LogType.logRegulator(2);
-                }
-            }
-            else
-            {
-                if (regulator.SrednjaTemperatura <= regulator.TempNocni)
-                {
-                    heater.HeaterUpaliGrejanje();
-                    LogType.logRegulator(1);
-                }
-                else
-                {
-                    heater.HeaterUgasiGrejanje();
-                    LogType.logRegulator(2);
+                    if (regulator.SrednjaTemperatura <= regulator.TempNocni)
+                    {
+                        heater.HeaterUpaliGrejanje();
+                        foreach (src.Device.implementation.Device device in regulator.Uredjaji)
+                        {
+                            device.HeaterState = true;
+                        }
+                        LogType.logRegulator(1);
+                    }
+                    else
+                    {
+                        heater.HeaterUgasiGrejanje();
+                        foreach (src.Device.implementation.Device device in regulator.Uredjaji)
+                        {
+                            device.HeaterState = false;
+                        }
+                        LogType.logRegulator(2);
+                    }
                 }
             }
         }

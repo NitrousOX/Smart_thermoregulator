@@ -19,6 +19,8 @@ namespace Smart_termoregulator.src
             Heater.implementation.Heater heater = new Heater.implementation.Heater();
             regulator.DodajUredjaje();
 
+
+
             var proveraTemp = new Thread(() => regulacija.Regulisi(regulator, heater));
             proveraTemp.Start();
             
