@@ -11,11 +11,10 @@ namespace Smart_termoregulator.src
             Regulator.implementations.RegulatorUI uI = new Regulator.implementations.RegulatorUI();
            src.Regulator.implementations.Regulator regulator = uI.ShowUserInterface();
 
-            /*
+            
             Random rnd = new Random();
             int deviceNum = 4;
             int[] ids = new int[deviceNum];
-            Regulator.implementations.Regulator regulator = new Regulator.implementations.Regulator();
 
             for (int i = 0; i < deviceNum; i++)
             {
@@ -39,7 +38,10 @@ namespace Smart_termoregulator.src
                         isti = true;
                 }
             }
-            */
+            Console.WriteLine(regulator.Uredjaji[0].Temperatura);
+            regulator.Uredjaji[0].DevicePovecajTemperaturu();
+            Console.WriteLine(regulator.Uredjaji[0].Temperatura);
+            
 
             Heater.implementation.Heater heater = new Heater.implementation.Heater();
 

@@ -25,8 +25,8 @@ namespace Smart_termoregulator.src.Heater.implementation
 
         public void UpisiUBazu(DateTime trenutno)
         {
-            List<string> text = new List<string>();
-            text.Add("[HEATER] Upaljen " + trenutno.ToString());
+            string text;
+            text = "[HEATER] Upaljen " + trenutno.ToString();
             src.FileUpis.UpisiUtxtFile.UpisiUFile(text, fileName);
         }
     }

@@ -13,7 +13,7 @@ namespace Smart_termoregulator.src.Device.implementation
         private float temperatura;
         private bool heaterState;
         private const float temperatureDifference = 0.01F;
-        private DevicePromeniTemeraturu promeniTemperaturu;
+        private DevicePromeniTemeraturu? promeniTemperaturu;
 
         public Device(int id)
         {
