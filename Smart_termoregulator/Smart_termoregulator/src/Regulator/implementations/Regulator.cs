@@ -13,12 +13,14 @@ namespace Smart_termoregulator.src.Regulator.implementations
         private rezim_rada rezim;
         private double tempNocni, tempDnevni;
         private OpsegRezima opsegDnevni;
-        private RegulatorRacunajTemp racunajTemp;
         private float srednjaTemperatura;
+        private int deviceNum;
+        private RegulatorDodajDevice dodajDevice;
+        private RegulatorRacunajTemp racunajTemp;
 
-        private List<Device.implementation.Device>? uredjaji = new List<Device.implementation.Device>();
+        private List<Device.implementation.Device> uredjaji = new List<Device.implementation.Device>();
 
-        public Regulator(string pocetakRezimaDnevnog, string krajRezimaDnevnog, double nocnaTemp, double dnevnaTRemp) 
+        public Regulator(string pocetakRezimaDnevnog, string krajRezimaDnevnog, double nocnaTemp, double dnevnaTemp, int deviceN) 
         {
             opsegDnevni = new OpsegRezima(pocetakRezimaDnevnog, krajRezimaDnevnog);
 
@@ -28,15 +30,31 @@ namespace Smart_termoregulator.src.Regulator.implementations
                 rezim = rezim_rada.NOCNI;
 
             tempNocni  = nocnaTemp;
-            tempDnevni = dnevnaTRemp;
+            tempDnevni = dnevnaTemp;
+            deviceNum = deviceN;
+
+            uredjaji = new List<Device.implementation.Device>();
+
+            dodajDevice = new RegulatorDodajDevice();
+            racunajTemp = new RegulatorRacunajTemp();
         }
 
         public double TempNocni { get => tempNocni; set => tempNocni = value; }
         public double TempDnevni { get => tempDnevni; set => tempDnevni = value; }
-        public List<Device.implementation.Device>? Uredjaji { get => uredjaji; set => uredjaji = value; }
+        public List<Device.implementation.Device> Uredjaji { get => uredjaji; set => uredjaji = value; }
         public float SrednjaTemperatura { get => srednjaTemperatura; set => srednjaTemperatura = value; }
+        public int DeviceNum { get => deviceNum; set => deviceNum = value; }
 
-        public void RegulatorRacunajTemperaturu()
+
+        public void DodajUredjaje()
+        {
+            if(uredjaji.Count() == 0)
+            {
+                dodajDevice.DodajDevice(this);
+            }
+        }
+
+        public void IzracunajSredjuTemperaturu()
         {
             racunajTemp.RacunajSrednjuTemperaturu(this);
         }
