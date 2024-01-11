@@ -18,15 +18,15 @@ namespace Smart_termoregulator.src.Heater.implementation
             List<string> text = new List<string>();
             double energija = kWh_per_s * informacijeZaVreme.ProtekloVreme.TotalSeconds;
 
-            text.Add("[HEATER] Ugasen " + informacijeZaVreme.Time.ToString());
-            text.Add("[HEATER] proteklo vreme rada je: " + informacijeZaVreme.ProtekloVreme.ToString() + " potroseno " + energija + " kWh");
+            text.Add("\n[HEATER] Ugasen " + informacijeZaVreme.Time.ToString());
+            text.Add("\n[HEATER] proteklo vreme rada je: " + informacijeZaVreme.ProtekloVreme.ToString() + " potroseno " + energija + " kWh");
             src.FileUpis.UpisiUtxtFile.UpisiUFile(text, fileName);
         }
 
         public void UpisiUBazu(DateTime trenutno)
         {
             string text;
-            text = "[HEATER] Upaljen " + trenutno.ToString();
+            text = "\n[HEATER] Upaljen " + trenutno.ToString();
             src.FileUpis.UpisiUtxtFile.UpisiUFile(text, fileName);
         }
     }
