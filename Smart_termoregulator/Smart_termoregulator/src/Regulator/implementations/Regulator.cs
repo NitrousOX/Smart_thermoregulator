@@ -17,7 +17,6 @@ namespace Smart_termoregulator.src.Regulator.implementations
         private float srednjaTemperatura;
         private int deviceNum;
         private RegulatorDodajDevice dodajDevice;
-      //  private Regulacija regulacija;
 
         private List<Device.implementation.Device> uredjaji = new List<Device.implementation.Device>();
 
@@ -38,7 +37,6 @@ namespace Smart_termoregulator.src.Regulator.implementations
 
             dodajDevice = new RegulatorDodajDevice();
             racunajTemp = new RegulatorRacunajTemp();
-           // regulacija = new Regulacija();
         }
 
         public double TempNocni { get => tempNocni; set => tempNocni = value; }
@@ -62,10 +60,5 @@ namespace Smart_termoregulator.src.Regulator.implementations
         {
             racunajTemp.RacunajSrednjuTemperaturu(this);
         }
-
-       /* public void IzvrsiRegulaciju()
-        {
-            regulacija.Regulisi(this, );
-        }*/
     }
 }
