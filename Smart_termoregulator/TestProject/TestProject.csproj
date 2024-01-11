@@ -28,8 +28,4 @@
     <ProjectReference Include="..\Smart_termoregulator\Smart_termoregulator.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DeviceTests\" />
-  </ItemGroup>
-
 </Project>
