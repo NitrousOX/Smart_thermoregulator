@@ -41,7 +41,6 @@ namespace TestProject.RegulatorTests
             regulator.DodajUredjaje();
             //Assert
         }
-
         [Fact]
         public void regulatorTestingIzracunajSrednjuTemp()
         {
