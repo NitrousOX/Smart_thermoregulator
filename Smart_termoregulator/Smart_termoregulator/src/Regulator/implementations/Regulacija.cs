@@ -14,11 +14,20 @@ namespace Smart_termoregulator.src.Regulator.implementations
         
         public void Regulisi(Regulator regulator, src.Heater.implementation.Heater heater)
         {
-            int vremeProvere = int.Parse(ConfigurationManager.AppSettings["vremeProvereTempRegulator"]);
+            int vremeProvere;
+            if (ConfigurationManager.AppSettings["vremeProvereTempRegulator"] != null)
+            {
+                vremeProvere = int.Parse(ConfigurationManager.AppSettings["vremeProvereTempRegulator"]);
+            }
+            else
+            {
+                vremeProvere = 120000; 
+            }
             while (true)
             {
                 regulator.IzracunajSrednjuTemperaturu();
                 double srednjaTemp = regulator.SrednjaTemperatura;
+                LogType.logRegulator(3);
 
 
                 if (regulator.Rezim == rezim_rada.DNEVNI)
@@ -27,20 +36,33 @@ namespace Smart_termoregulator.src.Regulator.implementations
                     {
                         if (heater.Stanje == stanje_peci.ISKLJUCEN)
                         {
-                            heater.HeaterUpaliGrejanje();
+                            lock (heater)
+                            {
+                                heater.HeaterUpaliGrejanje();
+                            }
+
                             foreach (src.Device.implementation.Device device in regulator.Uredjaji)
                             {
-                                device.HeaterState = true;
+                                lock (device)
+                                {
+                                    device.HeaterState = true;
+                                }
                             }
                             LogType.logRegulator(1);
                         }
                     }
                     else if (heater.Stanje == stanje_peci.UKLJUCEN)
                     {
-                        heater.HeaterUgasiGrejanje();
+                        lock (heater)
+                        {
+                            heater.HeaterUgasiGrejanje();
+                        }
                         foreach (src.Device.implementation.Device device in regulator.Uredjaji)
                         {
-                            device.HeaterState = false;
+                            lock (device)
+                            {
+                                device.HeaterState = false;
+                            }
                         }
                         LogType.logRegulator(2);
                     }
@@ -51,20 +73,32 @@ namespace Smart_termoregulator.src.Regulator.implementations
                     {
                         if (heater.Stanje == stanje_peci.ISKLJUCEN)
                         {
-                            heater.HeaterUpaliGrejanje();
+                            lock (heater)
+                            {
+                                heater.HeaterUpaliGrejanje();
+                            }
                             foreach (src.Device.implementation.Device device in regulator.Uredjaji)
                             {
-                                device.HeaterState = true;
+                                lock (device)
+                                {
+                                    device.HeaterState = true;
+                                }
                             }
                             LogType.logRegulator(1);
                         }
                     }
                     else if (heater.Stanje == stanje_peci.UKLJUCEN)
                     {
-                        heater.HeaterUgasiGrejanje();
+                        lock (heater)
+                        {
+                            heater.HeaterUgasiGrejanje();
+                        }
                         foreach (src.Device.implementation.Device device in regulator.Uredjaji)
                         {
-                            device.HeaterState = false;
+                            lock (device)
+                            {
+                                device.HeaterState = false;
+                            }
                         }
                         LogType.logRegulator(2);
                     }

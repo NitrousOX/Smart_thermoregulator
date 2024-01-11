@@ -40,6 +40,9 @@ namespace Smart_termoregulator.src.Regulator.implementations
                 case 2:
                     text = "Regulator gasi heater";
                     break;
+                case 3:
+                    text = "Regulator je proverio temp";
+                    break;
                 default:
                     text = "ERROR";
                     break;

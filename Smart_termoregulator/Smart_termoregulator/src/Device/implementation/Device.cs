@@ -13,8 +13,8 @@ namespace Smart_termoregulator.src.Device.implementation
         private Random rnd = new Random();
         private float temperatura;
         private bool heaterState;
-        private float temperatureDifference = float.Parse(ConfigurationManager.AppSettings["vrednostPromeneTemp"]);
         private DevicePromeniTemeraturu promeniTemperaturu;
+        private float temperatureDifference;
 
         public Device(int id)
         {
@@ -22,6 +22,15 @@ namespace Smart_termoregulator.src.Device.implementation
             temperatura = rnd.Next(500, 1500) / 100;
             heaterState = false;
             promeniTemperaturu = new DevicePromeniTemeraturu();
+
+            if (ConfigurationManager.AppSettings["vrednostPromeneTemp"] != null)
+            {
+                temperatureDifference = float.Parse(ConfigurationManager.AppSettings["vrednostPromeneTemp"]);
+            }
+            else
+            {
+                temperatureDifference = 180000;
+            }
         }
 
         public int Id { get => id; set => id = value; }

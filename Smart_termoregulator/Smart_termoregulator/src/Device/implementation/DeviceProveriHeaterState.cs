@@ -13,15 +13,25 @@ namespace Smart_termoregulator.src.Device.implementation
     {
         public void proveriHeaterState(Device device)
         {
-            int vremeProvere = int.Parse(ConfigurationManager.AppSettings["vremeProvereTempDevice"]);
+            int vremeProvere;
+            if (ConfigurationManager.AppSettings["vremeProvereTempDevice"] != null)
+            {
+                vremeProvere = int.Parse(ConfigurationManager.AppSettings["vremeProvereTempDevice"]);
+            }
+            else
+            {
+                vremeProvere = 180000;
+            }
             while (true)
             {
-                Thread.Sleep(vremeProvere);     //na svaka 2 min  120000
-                if (device.HeaterState)
-                    device.DevicePovecajTemperaturu();
-                else
-                    device.DeviceSmanjiTemperaturu();
-
+                Thread.Sleep(vremeProvere);
+                lock (device)
+                {
+                    if (device.HeaterState)
+                        device.DevicePovecajTemperaturu();
+                    else
+                        device.DeviceSmanjiTemperaturu();
+                }
             }
         }
 

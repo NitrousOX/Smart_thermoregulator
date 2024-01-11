@@ -1,0 +1,70 @@
+[LOG]	2024-01-11 20:47:44	Uneti novi rezimi rada
+[LOG]	2024-01-11 20:47:44	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:47:44	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:47:44	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:47:44	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:47:44	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:47:44	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:47:44	Regulator je proverio temp
+[LOG]	2024-01-11 20:47:44	Regulator pali heater
+[LOG]	2024-01-11 20:47:49	Regulator je proverio temp
+[LOG]	2024-01-11 20:47:54	Regulator je proverio temp
+[LOG]	2024-01-11 20:47:59	Regulator je proverio temp
+[LOG]	2024-01-11 20:48:04	Regulator je proverio temp
+[LOG]	2024-01-11 20:48:09	Regulator je proverio temp
+[LOG]	2024-01-11 20:48:14	Regulator je proverio temp
+[LOG]	2024-01-11 20:58:27	Uneti novi rezimi rada
+[LOG]	2024-01-11 20:58:27	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:58:27	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:58:27	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:58:27	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:58:27	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:58:27	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:58:27	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:58:27	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:58:27	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:58:27	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:58:27	Regulator je proverio temp
+[LOG]	2024-01-11 20:58:27	Regulator pali heater
+[LOG]	2024-01-11 20:58:32	Regulator je proverio temp
+[LOG]	2024-01-11 20:58:37	Regulator je proverio temp
+[LOG]	2024-01-11 20:58:42	Regulator je proverio temp
+[LOG]	2024-01-11 20:58:47	Regulator je proverio temp
+[LOG]	2024-01-11 20:58:52	Regulator je proverio temp
+[LOG]	2024-01-11 20:59:36	Uneti novi rezimi rada
+[LOG]	2024-01-11 20:59:37	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:59:37	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:59:37	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:59:37	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:59:37	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:59:37	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:59:37	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:59:37	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:59:37	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:59:37	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:59:37	Regulator je proverio temp
+[LOG]	2024-01-11 20:59:37	Regulator pali heater
+[LOG]	2024-01-11 20:59:42	Regulator je proverio temp
+[LOG]	2024-01-11 20:59:47	Regulator je proverio temp
+[LOG]	2024-01-11 20:59:52	Regulator je proverio temp
+[LOG]	2024-01-11 20:59:57	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:02	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:07	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:12	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:12	Regulator gasi heater
+[LOG]	2024-01-11 21:00:17	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:17	Regulator pali heater
+[LOG]	2024-01-11 21:00:22	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:22	Regulator gasi heater
+[LOG]	2024-01-11 21:00:27	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:27	Regulator pali heater
+[LOG]	2024-01-11 21:00:32	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:32	Regulator gasi heater
+[LOG]	2024-01-11 21:00:37	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:37	Regulator pali heater
+[LOG]	2024-01-11 21:00:42	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:42	Regulator gasi heater
+[LOG]	2024-01-11 21:00:47	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:47	Regulator pali heater
+[LOG]	2024-01-11 21:00:52	Regulator je proverio temp
+[LOG]	2024-01-11 21:00:52	Regulator gasi heater
