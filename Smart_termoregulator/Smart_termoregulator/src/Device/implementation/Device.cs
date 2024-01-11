@@ -12,7 +12,7 @@ namespace Smart_termoregulator.src.Device.implementation
         private Random rnd = new Random();
         private float temperatura;
         private bool heaterState;
-        private const float temperatureDifference = 0.01F;
+        private const float temperatureDifference = 1F;
         private DevicePromeniTemeraturu promeniTemperaturu;
 
         public Device(int id)
@@ -28,7 +28,7 @@ namespace Smart_termoregulator.src.Device.implementation
 
         public float TemperatureDifference => temperatureDifference;
 
-        public bool HeaterState { set => heaterState = value; }
+        public bool HeaterState { get => heaterState; set => heaterState = value; }
 
         public void DevicePovecajTemperaturu()
         {

@@ -14,17 +14,23 @@ namespace Smart_termoregulator.src
 
             Regulator.implementations.Regulator regulator = uI.ShowUserInterface();
 
+            Heater.implementation.Heater heater = new Heater.implementation.Heater();
+
             Regulator.implementations.Regulacija regulacija = new Regulator.implementations.Regulacija();
 
-            Heater.implementation.Heater heater = new Heater.implementation.Heater();
+            Device.implementation.DeviceProveriHeaterState proveriHeaterState = new Device.implementation.DeviceProveriHeaterState();
+
             regulator.DodajUredjaje();
-
-
 
             var proveraTemp = new Thread(() => regulacija.Regulisi(regulator, heater));
             proveraTemp.Start();
-            
 
+            for(int i=0; i<regulator.DeviceNum; i++)
+            {
+                var proveraState = new Thread(() => proveriHeaterState.proveriHeaterState(regulator.Uredjaji[i]));
+                proveraState.Start();
+            }
+            
 
         }
     }
