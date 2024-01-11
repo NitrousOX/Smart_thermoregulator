@@ -13,11 +13,11 @@ namespace Smart_termoregulator.src.Regulator.implementations
         private rezim_rada rezim;
         private double tempNocni, tempDnevni;
         private OpsegRezima opsegDnevni;
-        private RegulatorRacunajTemp? racunajTemp;
+        private RegulatorRacunajTemp racunajTemp;
         private float srednjaTemperatura;
         private int deviceNum;
         private RegulatorDodajDevice dodajDevice;
-        private RegulatorRacunajTemp racunajTemp;
+      //  private Regulacija regulacija;
 
         private List<Device.implementation.Device> uredjaji = new List<Device.implementation.Device>();
 
@@ -38,6 +38,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
 
             dodajDevice = new RegulatorDodajDevice();
             racunajTemp = new RegulatorRacunajTemp();
+           // regulacija = new Regulacija();
         }
 
         public double TempNocni { get => tempNocni; set => tempNocni = value; }
@@ -57,9 +58,14 @@ namespace Smart_termoregulator.src.Regulator.implementations
             }
         }
 
-        public void IzracunajSredjuTemperaturu()
+        public void IzracunajSrednjuTemperaturu()
         {
             racunajTemp.RacunajSrednjuTemperaturu(this);
         }
+
+       /* public void IzvrsiRegulaciju()
+        {
+            regulacija.Regulisi(this, );
+        }*/
     }
 }

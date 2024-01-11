@@ -12,6 +12,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
         //TODO: logovanje
         public void Regulisi(Regulator regulator, src.Heater.implementation.Heater heater)
         {
+            regulator.IzracunajSrednjuTemperaturu();
             double srednjaTemp = regulator.SrednjaTemperatura;
 
             if(regulator.Rezim == rezim_rada.DNEVNI)
