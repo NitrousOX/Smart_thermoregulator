@@ -1,8 +1,0 @@
-[LOG]	2024-01-11 20:39:15	Uneti novi rezimi rada
-[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:39:15	Regulator pali heater

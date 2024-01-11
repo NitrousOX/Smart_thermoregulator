@@ -25,12 +25,19 @@ namespace Smart_termoregulator.src
             var proveraTemp = new Thread(() => regulacija.Regulisi(regulator, heater));
             proveraTemp.Start();
 
-            for(int i=0; i<regulator.DeviceNum; i++)
+            Thread[] proveraState = new Thread[regulator.DeviceNum];
+
+            for (int i=0; i<regulator.DeviceNum; i++)
             {
-                var proveraState = new Thread(() => proveriHeaterState.proveriHeaterState(regulator.Uredjaji[i]));
-                proveraState.Start();
+                int localnum = i;
+                proveraState[i] = new Thread(() => proveriHeaterState.proveriHeaterState(regulator.Uredjaji[localnum]));
             }
-            
+
+            for (int i = 0; i < regulator.DeviceNum; i++)
+            {
+                proveraState[i].Start();
+            }
+
 
         }
     }
