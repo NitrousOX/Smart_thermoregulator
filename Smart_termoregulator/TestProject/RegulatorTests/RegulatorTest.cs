@@ -41,7 +41,7 @@ namespace TestProject.RegulatorTests
             regulator.DodajUredjaje();
             //Assert
         }
-
+        [Fact]
         public void regulatorTestingIzracunajSrednjuTemp()
         {
             //Arrange
@@ -71,7 +71,7 @@ namespace TestProject.RegulatorTests
             //Act
             regulator.IzracunajSrednjuTemperaturu();
             //Assert
-            Assert.
+            
 
         }
 
