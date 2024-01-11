@@ -9,17 +9,12 @@ namespace Smart_termoregulator.src.Device.implementation
 {
     public class DevicePromeniTemeraturu : IPromenaTemperature
     {
-        private Device device = new Device();
-        /// <summary>
-        /// Moras preneti nekako objekat device da manipulises sa njim jer ovde pravis novi ne vezani
-        /// </summary>
-
-        public void PovecajTemperaturu()
+        public void PovecajTemperaturu(Device device)
         {
             device.Temperatura += device.TemperatureDifference;
         }
 
-        public void SmanjiTemperaturu()
+        public void SmanjiTemperaturu(Device device)
         {
             device.Temperatura -= device.TemperatureDifference;
         }

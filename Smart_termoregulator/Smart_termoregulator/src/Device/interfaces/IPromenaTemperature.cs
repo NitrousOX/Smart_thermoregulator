@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Smart_termoregulator.src.Device.implementation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,7 @@ namespace Smart_termoregulator.src.Device.interfaces
 {
     public interface IPromenaTemperature
     {
-        void PovecajTemperaturu();
-        void SmanjiTemperaturu();
+        void PovecajTemperaturu(Device.implementation.Device device);
+        void SmanjiTemperaturu(Device.implementation.Device device);
     }
 }
