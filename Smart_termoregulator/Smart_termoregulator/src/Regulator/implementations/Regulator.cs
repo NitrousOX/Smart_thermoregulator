@@ -13,7 +13,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
         private rezim_rada rezim;
         private double tempNocni, tempDnevni;
         private OpsegRezima opsegDnevni;
-        private RegulatorRacunajTemp racunajTemp;
+        private RegulatorRacunajTemp? racunajTemp;
         private float srednjaTemperatura;
 
         private List<Device.implementation.Device>? uredjaji = new List<Device.implementation.Device>();
@@ -35,10 +35,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
         public double TempDnevni { get => tempDnevni; set => tempDnevni = value; }
         public List<Device.implementation.Device>? Uredjaji { get => uredjaji; set => uredjaji = value; }
         public float SrednjaTemperatura { get => srednjaTemperatura; set => srednjaTemperatura = value; }
+        internal rezim_rada Rezim { get => rezim;}
 
-        public void RegulatorRacunajTemperaturu()
-        {
-            racunajTemp.RacunajSrednjuTemperaturu(this);
-        }
     }
 }

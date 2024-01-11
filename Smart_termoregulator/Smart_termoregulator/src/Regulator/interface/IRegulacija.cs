@@ -8,6 +8,6 @@ namespace Smart_termoregulator.src.Regulator.@interface
 {
     internal interface IRegulacija
     {
-       
+        void Regulisi(src.Regulator.implementations.Regulator r, src.Heater.implementation.Heater heater);    
     }
 }
