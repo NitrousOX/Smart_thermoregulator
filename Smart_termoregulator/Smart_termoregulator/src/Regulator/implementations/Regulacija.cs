@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Configuration;
 
 namespace Smart_termoregulator.src.Regulator.implementations
 {
@@ -13,9 +14,9 @@ namespace Smart_termoregulator.src.Regulator.implementations
         
         public void Regulisi(Regulator regulator, src.Heater.implementation.Heater heater)
         {
+            int vremeProvere = int.Parse(ConfigurationManager.AppSettings["vremeProvereTempRegulator"]);
             while (true)
             {
-                Thread.Sleep(1000);
                 regulator.IzracunajSrednjuTemperaturu();
                 double srednjaTemp = regulator.SrednjaTemperatura;
 
@@ -68,6 +69,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
                         LogType.logRegulator(2);
                     }
                 }
+                Thread.Sleep(vremeProvere);
             }
         }
     }

@@ -1,60 +1,8 @@
-<<<<<<< Updated upstream
-[LOG]	2024-01-11 19:35:57	Uneti novi rezimi rada
-[LOG]	2024-01-11 19:35:57	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:35:57	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:35:57	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:35:57	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:36:05	Regulator pali heater
-=======
-[LOG]	2024-01-11 18:03:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:03:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:03:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:03:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:03:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:03:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:03:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:03:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:03:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:03:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:53:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:53:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:53:10	Dodat je novi Uredjaj
-[LOG]	2024-01-11 18:53:10	Dodat je novi Uredjaj
->>>>>>> Stashed changes
-[LOG]	2024-01-11 19:55:34	Uneti novi rezimi rada
-[LOG]	2024-01-11 19:55:34	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:55:34	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:55:34	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:55:34	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:55:34	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:55:34	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:59:29	Uneti novi rezimi rada
-[LOG]	2024-01-11 19:59:29	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:59:29	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:59:29	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:59:29	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:59:29	Dodat je novi Uredjaj
-[LOG]	2024-01-11 19:59:29	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:01:50	Uneti novi rezimi rada
-[LOG]	2024-01-11 20:01:50	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:01:50	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:01:50	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:01:50	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:01:50	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:01:50	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:02:19	Regulator pali heater
-[LOG]	2024-01-11 20:02:54	Regulator gasi heater
-[LOG]	2024-01-11 20:02:56	Regulator pali heater
-[LOG]	2024-01-11 20:02:58	Regulator gasi heater
-[LOG]	2024-01-11 20:03:00	Regulator pali heater
-[LOG]	2024-01-11 20:03:02	Regulator gasi heater
-[LOG]	2024-01-11 20:03:03	Regulator pali heater
-[LOG]	2024-01-11 20:03:04	Regulator gasi heater
-[LOG]	2024-01-11 20:03:05	Regulator pali heater
-[LOG]	2024-01-11 20:03:23	Uneti novi rezimi rada
-[LOG]	2024-01-11 20:03:23	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:03:23	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:03:23	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:03:23	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:03:23	Dodat je novi Uredjaj
-[LOG]	2024-01-11 20:03:23	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:39:15	Uneti novi rezimi rada
+[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:39:15	Dodat je novi Uredjaj
+[LOG]	2024-01-11 20:39:15	Regulator pali heater

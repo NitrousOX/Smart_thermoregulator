@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ namespace Smart_termoregulator.src.Device.implementation
         private Random rnd = new Random();
         private float temperatura;
         private bool heaterState;
-        private const float temperatureDifference = 1F;
+        private float temperatureDifference = float.Parse(ConfigurationManager.AppSettings["vrednostPromeneTemp"]);
         private DevicePromeniTemeraturu promeniTemperaturu;
 
         public Device(int id)
