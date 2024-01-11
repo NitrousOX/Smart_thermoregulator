@@ -9,7 +9,7 @@ using System.Configuration;
 
 namespace Smart_termoregulator.src.Regulator.implementations
 {
-    internal class Regulacija : IRegulacija
+    public class Regulacija : IRegulacija
     {
         
         public void Regulisi(Regulator regulator, src.Heater.implementation.Heater heater)

@@ -4,8 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Smart_termoregulator.src.Heater.implementation;
 
-namespace TestProject.Heater
+namespace TestProject.HeaterTests
 {
     
     public class HeaterTest
@@ -14,9 +15,10 @@ namespace TestProject.Heater
         public void heaterPromenaStanja_Upali()
         {
             //Arrange - variables
-
+            Heater heater = new Heater();
             //ACT
-            
+            //mora da se koristi mock
+            heater.HeaterUpaliGrejanje();
 
             //Assert
             
