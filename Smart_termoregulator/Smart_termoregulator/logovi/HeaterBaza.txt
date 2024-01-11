@@ -56,3 +56,18 @@
 [HEATER] proteklo vreme rada je: 00:00:05.0083770 potroseno 0.0015876555090000002 kWh
 [HEATER] Upaljen 11/01/2024 18:03:10[HEATER] Ugasen 11/01/2024 18:03:15
 [HEATER] proteklo vreme rada je: 00:00:05.0077619 potroseno 0.0015874605223 kWh
+[HEATER] Upaljen 11/01/2024 19:25:11[HEATER] Ugasen 11/01/2024 19:25:12
+[HEATER] proteklo vreme rada je: 00:00:01.0137806 potroseno 0.0003213684502 kWh
+[HEATER] Upaljen 11/01/2024 19:25:13[HEATER] Ugasen 11/01/2024 19:25:14
+[HEATER] proteklo vreme rada je: 00:00:01.0041802 potroseno 0.0003183251234 kWh
+[HEATER] Upaljen 11/01/2024 19:25:15[HEATER] Ugasen 11/01/2024 19:25:16
+[HEATER] proteklo vreme rada je: 00:00:01.0124106 potroseno 0.0003209341602 kWh
+[HEATER] Upaljen 11/01/2024 19:25:17[HEATER] Ugasen 11/01/2024 19:25:18
+[HEATER] proteklo vreme rada je: 00:00:01.0148650 potroseno 0.000321712205 kWh
+[HEATER] Upaljen 11/01/2024 19:25:19[HEATER] Ugasen 11/01/2024 19:25:21
+[HEATER] proteklo vreme rada je: 00:00:01.0139228 potroseno 0.00032141352760000003 kWh
+[HEATER] Upaljen 11/01/2024 19:25:22[HEATER] Ugasen 11/01/2024 19:25:23
+[HEATER] proteklo vreme rada je: 00:00:01.0141949 potroseno 0.0003214997833 kWh
+[HEATER] Upaljen 11/01/2024 19:25:24[HEATER] Ugasen 11/01/2024 19:25:25
+[HEATER] proteklo vreme rada je: 00:00:01.0131978 potroseno 0.0003211837026 kWh
+[HEATER] Upaljen 11/01/2024 19:25:26[HEATER] Upaljen 11/01/2024 19:28:03[HEATER] Upaljen 11/01/2024 19:34:52[HEATER] Upaljen 11/01/2024 19:36:05

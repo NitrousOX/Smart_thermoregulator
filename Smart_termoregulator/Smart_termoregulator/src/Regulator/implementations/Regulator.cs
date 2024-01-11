@@ -20,7 +20,7 @@ namespace Smart_termoregulator.src.Regulator.implementations
 
         private List<Device.implementation.Device> uredjaji = new List<Device.implementation.Device>();
 
-        public Regulator(string pocetakRezimaDnevnog, string krajRezimaDnevnog, double nocnaTemp, double dnevnaTemp, int deviceN) 
+        public Regulator(string pocetakRezimaDnevnog, string krajRezimaDnevnog, double dnevnaTemp, double nocnaTemp, int deviceN) 
         {
             opsegDnevni = new OpsegRezima(pocetakRezimaDnevnog, krajRezimaDnevnog);
 

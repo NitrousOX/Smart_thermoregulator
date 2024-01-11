@@ -1,4 +1,5 @@
-﻿using Smart_termoregulator.src.Regulator.@interface;
+﻿using Smart_termoregulator.src.Heater.implementation;
+using Smart_termoregulator.src.Regulator.@interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,22 +15,26 @@ namespace Smart_termoregulator.src.Regulator.implementations
         {
             while (true)
             {
-                Thread.Sleep(100);
+                Thread.Sleep(1000);
                 regulator.IzracunajSrednjuTemperaturu();
                 double srednjaTemp = regulator.SrednjaTemperatura;
+
 
                 if (regulator.Rezim == rezim_rada.DNEVNI)
                 {
                     if (regulator.SrednjaTemperatura <= regulator.TempDnevni)
                     {
-                        heater.HeaterUpaliGrejanje();
-                        foreach (src.Device.implementation.Device device in regulator.Uredjaji)
+                        if (heater.Stanje == stanje_peci.ISKLJUCEN)
                         {
-                            device.HeaterState = true;
+                            heater.HeaterUpaliGrejanje();
+                            foreach (src.Device.implementation.Device device in regulator.Uredjaji)
+                            {
+                                device.HeaterState = true;
+                            }
+                            LogType.logRegulator(1);
                         }
-                        LogType.logRegulator(1);
                     }
-                    else
+                    else if (heater.Stanje == stanje_peci.UKLJUCEN)
                     {
                         heater.HeaterUgasiGrejanje();
                         foreach (src.Device.implementation.Device device in regulator.Uredjaji)
@@ -43,14 +48,17 @@ namespace Smart_termoregulator.src.Regulator.implementations
                 {
                     if (regulator.SrednjaTemperatura <= regulator.TempNocni)
                     {
-                        heater.HeaterUpaliGrejanje();
-                        foreach (src.Device.implementation.Device device in regulator.Uredjaji)
+                        if (heater.Stanje == stanje_peci.ISKLJUCEN)
                         {
-                            device.HeaterState = true;
+                            heater.HeaterUpaliGrejanje();
+                            foreach (src.Device.implementation.Device device in regulator.Uredjaji)
+                            {
+                                device.HeaterState = true;
+                            }
+                            LogType.logRegulator(1);
                         }
-                        LogType.logRegulator(1);
                     }
-                    else
+                    else if (heater.Stanje == stanje_peci.UKLJUCEN)
                     {
                         heater.HeaterUgasiGrejanje();
                         foreach (src.Device.implementation.Device device in regulator.Uredjaji)
