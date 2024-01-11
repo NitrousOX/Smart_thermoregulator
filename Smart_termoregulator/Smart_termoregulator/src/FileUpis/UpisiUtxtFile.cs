@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.FileUpis
 {
-    internal class UpisiUtxtFile
+    public class UpisiUtxtFile
     {
         
 

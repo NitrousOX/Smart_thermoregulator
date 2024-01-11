@@ -7,7 +7,7 @@ using Smart_termoregulator.src.Heater.Interfaces;
 
 namespace Smart_termoregulator.src.Heater.implementation
 {
-    internal class HeaterPromenaStanja : IPromenaStanja
+    public class HeaterPromenaStanja : IPromenaStanja
     {
         HeaterVreme vreme = new HeaterVreme();
         heaterUpisBaza upis = new heaterUpisBaza();

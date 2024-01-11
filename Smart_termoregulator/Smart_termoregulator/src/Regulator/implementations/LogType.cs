@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.Regulator.implementations
 {
-    internal class LogType : LogovanjeDesavanja
+    public class LogType : LogovanjeDesavanja
     {
         public static void logDevice(int i)
         {

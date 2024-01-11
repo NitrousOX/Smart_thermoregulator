@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Smart_termoregulator.src.Heater.implementation
 {
-    internal class heaterUpisBaza : IupisUBazu
+    public class heaterUpisBaza : IupisUBazu
     {
         private readonly string fileName = "HeaterBaza.txt";
         private const double kWh_per_s = 0.000317;
